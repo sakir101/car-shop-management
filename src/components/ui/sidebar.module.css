@@ -1,0 +1,6 @@
+
+.fixed-content {
+    height: 100vh; /* or any other value */
+    overflow-y: auto; /* or scroll */
+  }
+  

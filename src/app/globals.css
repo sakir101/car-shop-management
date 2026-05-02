@@ -1,0 +1,176 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+/* calender modify */
+.rbc-event {
+  padding: 3px !important;
+  padding-top: 5px !important;
+}
+
+.rbc-day-bg {
+  position: relative;
+  cursor: pointer;
+}
+
+.rbc-day-bg:hover::after {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  color: slategray;
+  pointer-events: none !important;
+}
+
+/* Hide scrollbar but keep scroll functionality */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* For Internet Explorer and Edge */
+  scrollbar-width: none;     /* For Firefox */
+}
+
+
+/* Side bar Selected item bg color  */
+.ant-menu-light .ant-menu-item-selected{
+  background: #EFEFEF !important;
+}
+
+
+
+
+/* Custom reusable class */
+.view-page-container {
+  @apply px-5 mx-auto py-2;
+}
+
+.trow-add-item-button {
+  @apply flex rounded items-center gap-1 bg-[#2E2E2E] hover:bg-neutral-700 cursor-pointer font-medium hover:font-semibold
+}
+
+/* Trow Component */
+.trow-delete-button {
+  @apply flex items-center justify-center gap-1 bg-[#7F7F7F] text-white text-sm px-4 py-1 rounded text-center border-none hover:text-white cursor-pointer w-16;
+}
+.trow-delete-button-part {
+  @apply flex items-center justify-center gap-1 bg-[#7F7F7F] text-white text-sm px-4 py-1 rounded text-center border-none hover:text-white cursor-pointer;
+}
+
+.trow-view-button {
+  @apply flex items-center justify-center gap-1 border border-solid border-gray-200 rounded text-black text-sm py-1 text-center cursor-pointer bg-white px-4 w-16;
+}
+
+.trow-view-button-part {
+  @apply flex items-center justify-center gap-1 border border-solid border-gray-200 rounded text-black text-sm py-1 text-center cursor-pointer bg-white px-4 ;
+}
+.trow-td {
+  @apply px-3  border border-gray-300 py-3  text-sm break-words
+}
+.trow-td-part {
+  @apply px-3  border border-gray-300 py-1  text-sm break-words
+}
+.trow-tr-part {
+  @apply hover:bg-[#FAFAFA] border-b border-l-0 border-r-0 border-[1px] border-gray-200 border-solid last:border-b-0 
+}
+.trow-tr {
+  @apply hover:bg-[#FAFAFA] border-b border-l-0 border-r-0 border-[1px] border-gray-200 border-solid last:border-b-0 
+}
+.trow-tr-part:first-child {
+  @apply border-t-0;
+}
+
+/* related item header */
+
+.related-header-top {
+  @apply bg-[#EFEFEF] p-1 rounded-t-md  z-10
+}
+.related-header-background {
+   @apply bg-[#F9F9F9] rounded-md h-auto my-3 relative 
+}
+.related-card-container {
+   @apply bg-[#FFFFFF] p-2 my-2 rounded border-solid border-[1px] border-orange-300 shadow-sm
+}
+
+.estimate-sticky-header {
+  @apply sticky top-0 z-50 bg-white py-2 
+}
+.page-container {
+  @apply mx-auto px-3 w-full md:w-[80%]
+}
+
+/* create container */
+.create-container {
+  @apply relative p-3 rounded-md bg-white border border-solid border-gray-200
+}
+
+.page-header {
+  @apply w-full px-2 md:w-[80%] mx-auto
+}
+.create-title-submit {   
+  @apply fixed w-full top-0 left-1 right-4 z-50 text-neutral-800  lg:ml-[200px] bg-white border-b border-gray-200 py-3 shadow-sm;
+}
+
+
+.create-submit-button {
+  @apply flex justify-center  items-center z-50 fixed top-0  right-2 md:right-32
+}
+
+/* estimate card title */
+
+.inspection-hour-title {
+  @apply text-sm font-bold text-black
+}
+
+.estimate-service-title-des {
+  @apply border-solid border  flex items-center justify-between gap-2  border-gray-200   p-3 rounded-md bg-white
+}
+.hide-scroll {
+  overflow-y: auto;
+  scrollbar-width: none;      /* Firefox */
+  -ms-overflow-style: none;   /* IE/Edge */
+}
+
+.hide-scroll::-webkit-scrollbar {
+  display: none;              /* Chrome, Safari */
+}
+
+
+/* hide Now & OK buttons */
+.no-footer-picker .ant-picker-footer {
+  display: none !important;
+}
+.input-field {
+  @apply py-1
+}
+.rbc-event-label {
+  display: none !important;
+}
+.rbc-event {
+  border-radius: 6px !important;
+}
+input,
+textarea,
+select {
+  color-scheme: light;
+}
+
+/* .ant-radio-group .ant-radio-button-wrapper {
+  border-right: none !important;
+  border-inline-end: none !important;
+}
+
+.ant-radio-button-wrapper::before {
+  display: none !important;
+} */
