@@ -1,6 +1,6 @@
-# 🚗 ZhoopZhoop: Car Service Management System
+# 🚗 Car Service Management System
 
-**ZhoopZhoop** is a modern web-based car servicing management system designed to streamline workshop operations. It enables efficient tracking of customer vehicles, service processes, technician activities, and business analytics.
+**Car Service Management System** is a modern web-based car servicing management system designed to streamline workshop operations. It enables efficient tracking of customer vehicles, service processes, technician activities, and business analytics.
 ---
 
 ## 👥 User Roles
